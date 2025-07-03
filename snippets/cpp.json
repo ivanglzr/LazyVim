@@ -1,0 +1,86 @@
+{
+  "Competitive Programming": {
+    "prefix": "cp",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "#define ll long long int",
+      "#define MOD 1000000007",
+      "#define endl \"\\n\"",
+      "#define pii pair<int, int>",
+      "",
+      "signed main() {",
+      "  ios::sync_with_stdio(false);",
+      "  cin.tie(nullptr);",
+      "",
+      "  $0",
+      "",
+      "  return 0;",
+      "}"
+    ],
+    "description": "Basic Template for CP"
+  },
+  "Competitive Programming MultiTestcase": {
+    "prefix": "cptc",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "#define ll long long int",
+      "#define MOD 1000000007",
+      "#define endl \"\\n\"",
+      "#define pii pair<int, int>",
+      "",
+      "void solve() {",
+      "  $0",
+      "}",
+      "",
+      "signed main() {",
+      "  ios::sync_with_stdio(false);",
+      "  cin.tie(nullptr);",
+      "",
+      "  int tc;",
+      "  cin >> tc;",
+      "",
+      "  while (tc--)",
+      "    solve();",
+      "",
+      "  return 0;",
+      "}"
+    ],
+    "description": "MultiTestcase Template for CP"
+  },
+  "Log 2 Ceil": {
+    "prefix": "log2ceil",
+    "body": [
+      "int log2ceil(int x) {",
+      "  int cnt = 0;",
+      "",
+      "  while (x) {",
+      "    x >>= 1;",
+      "    cnt++;",
+      "  }",
+      "",
+      "  return cnt;",
+      "}"
+    ],
+    "description": "Log 2 Ceil function"
+  },
+  "Log 2 Floor": {
+    "prefix": "log2floor",
+    "body": [
+      "int log2floor(int x) {",
+      "  int cnt = 0;",
+      "",
+      "  while (x > 1) {",
+      "    x >>= 1;",
+      "    cnt++;",
+      "  }",
+      "",
+      "  return cnt;",
+      "}"
+    ],
+    "description": "Log 2 Ceil function"
+  }
+}
