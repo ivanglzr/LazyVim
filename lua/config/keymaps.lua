@@ -13,7 +13,6 @@ keymap("n", "<C-s>", ":w<CR>", opts(true))
 
 keymap("n", "<C-t>", ":colorscheme<Space>", opts(false))
 
-keymap("n", "<A-S-f>", ":LazyFormat<CR>", opts(true))
 keymap("n", "<leader>r", ":bnext<CR>", opts(true))
 keymap("n", "<leader>a", ":bprev<CR>", opts(true))
 
