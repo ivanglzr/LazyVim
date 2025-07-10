@@ -5,6 +5,7 @@ return {
       cpp = { "clang_format" },
       c = { "clang_format" },
       h = { "clang_format" },
+      json = { "prettier" },
     },
   },
 }
