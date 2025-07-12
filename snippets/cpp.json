@@ -196,5 +196,25 @@
       "}"
     ],
     "description": "Algorithm to compute all the prime numbers up to n"
+  },
+  "Binary Exponentiation": {
+    "prefix": "binexp",
+    "body": [
+      "int binexp(int n, int k, int m) {",
+      "  int res = 1 % m;",
+      "  n %= m;",
+      "",
+      "  while (k > 0) {",
+      "    if (k & 1)",
+      "      res = (res * n) % m;",
+      "",
+      "    n = (n * n) % m;",
+      "    k >>= 1;",
+      "  }",
+      "",
+      "  return res;",
+      "}"
+    ],
+    "description": "Binary Exponentiation / Fast Exponentiation"
   }
 }
