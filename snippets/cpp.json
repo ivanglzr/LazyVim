@@ -216,5 +216,10 @@
       "}"
     ],
     "description": "Binary Exponentiation / Fast Exponentiation"
+  },
+  "Modulo": {
+    "prefix": "mod",
+    "body": ["int mod(int a, int b) {", "  return (a % b + b) % b;", "}"],
+    "description": "Modulo function"
   }
 }
