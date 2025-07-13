@@ -5,7 +5,7 @@
       "#include <bits/stdc++.h>",
       "using namespace std;",
       "",
-      "#define ll long long int",
+      "#define int long long int",
       "#define ld long double",
       "#define MOD 1000000007",
       "#define INF 1000000000",
@@ -37,7 +37,7 @@
       "#include <bits/stdc++.h>",
       "using namespace std;",
       "",
-      "#define ll long long int",
+      "#define int long long int",
       "#define ld long double",
       "#define MOD 1000000007",
       "#define INF 1000000000",
@@ -221,5 +221,18 @@
     "prefix": "mod",
     "body": ["int mod(int a, int b) {", "  return (a % b + b) % b;", "}"],
     "description": "Modulo function"
+  },
+  "Iterative Pow": {
+    "prefix": "poww",
+    "body": [
+      "int poww(int a, int b) {",
+      "  int ans = 1;",
+      "",
+      "  while (b--) ans *= a;",
+      "",
+      "  return ans;",
+      "}"
+    ],
+    "description": "Iterative version of pow"
   }
 }
