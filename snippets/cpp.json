@@ -234,5 +234,55 @@
       "}"
     ],
     "description": "Iterative version of pow"
+  },
+  "Binary Lifting": {
+    "prefix": "binlift",
+    "body": [
+      "vector<vector<int>> up",
+      "vector<int> depth;",
+      "",
+      "void binlift(int u, int p) {",
+      "  up[u][0] = p;",
+      "",
+      "  for (int j = 1; j < LOG; j++) {",
+      "    if (up[u][j - 1] != -1) up[u][j] = up[up[u][j - 1]][j - 1];",
+      "    else up[u][j] = -1;",
+      "  }",
+      "",
+      "  for (int v : adj[u]) {",
+      "    if (v == p) continue;",
+      "",
+      "    depth[v] = depth[u] + 1;",
+      "    binlift(v, u);",
+      "  }",
+      "}"
+    ],
+    "description": "Binary Lifting Template"
+  },
+  "LCA": {
+    "prefix": "lca",
+    "body": [
+      "int lca(int u, int v) {",
+      "  if (depth[u] < depth[v]) swap(u, v);",
+      "",
+      "  int diff = depth[u] - depth[v];",
+      "",
+      "  for (int j = 0; j < LOG; j++) {",
+      "    if ((diff >> j) & 1) v = up[v][j];",
+      "  }",
+      "",
+      "  if (u == v) return u;",
+      "",
+      "  for (int j = LOG - 1; j >= 0; j--) {",
+      "    if (up[u][j] != -1 && up[u][j] != up[v][j]) {",
+      "      u = up[u][j];",
+      "      v = up[v][j];",
+      "    }",
+      "  }",
+      "",
+      "  return up[u][0];",
+      "}"
+    ],
+    "description": "LCA funciton"
   }
 }
