@@ -284,5 +284,10 @@
       "}"
     ],
     "description": "LCA funciton"
+  },
+  "Variable": {
+    "prefix": "var",
+    "body": ["${2:int} ${1:n};", "cin >> ${1};"],
+    "description": "Variable snippet"
   }
 }
